@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>online food</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar {
+      margin-bottom: 25px;
+     border-radius: 0;
+    }
+    
+  
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    
+	body{
+		background-color: #ffccee
+}
+    footer {
+      background-colour: #1a1a1a;
+      padding: 20px;
+    }
+.jumbotron {
+background-image: url(http://www.marcelaburgos.com/wp-content/uploads/2013/07/cupcakes-de-caramelo-banner.jpg);
+background-size: cover;
+height: 100%;
+padding: 20px 15px;
+text-align:center;
+background-size:cover;
+}
+
+.jumbotron h1{
+color: #006600
+}
+.jumbotron p{
+color: #33fff9
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+     height: 500px; 
+	width: 100%;
+      margin: auto;
+  }
+
+
+.sidenav {
+    height: 40%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 45%;
+    left: 30;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 28px;
+}
+
+.sidenav a {
+    padding: 0px 20px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ccffff;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ff0000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	color: lavender;
+    top: 0%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 100px;
+height: 28px;
+background-color: #ff0000;
+}
+  .sidenav a {font-size: 18px;
+
+}
+}
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+
+  <div class="container text-center ”>
+	<div class="col-lg-4">
+                            </div>
+    <h1> Online Food delivery</h1>
+    <p>Eat Live Enjoy</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li> <a href="#">	<span style="font-size:20px; cursor:pointer" onclick="openNav()">&#9776;Menu</span>	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Indian meal</a>
+  <a href="#">chines</a>
+  <a href="#">Italian</a>
+  <a href="#">bake & more</a>
+	<a href="#">drinking dancing</a>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>	</a></li>
+        <li><a href="#">special</a></li>
+        <li><a href="#">Contact</a></li>
+	<li>div class="container">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+		    <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=“#price”>price</a></li>
+                      <li><a href=“#availability”>availability</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anything</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <form action="search.jsp">
+                <input type="text" class="form-control" name="name" placeholder="Search..">
+                
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"><input type="submit"></span></button>
+                </form>    
+                </span>
+            </div>
+        </div>
+	</div>
+</div>
+
+ </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>sign in</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://happybirthdaycakeimages.com/wp-content/uploads/2015/05/Cherry-Chocolate-Birthday-Cake.jpg" alt=“cake”>
+    </div>
+
+    <div class="item active”>
+      <img src="http://wdy.h-cdn.co/assets/16/15/980x490/landscape-1460383033-picmonkey-collage-6.jpg" alt="Cup cake”>
+    </div>
+
+
+<div class="item active”>
+      <img src="http://rbk.h-cdn.co/assets/cm/14/50/980x551/5489f95c03900_-_rbk-shot-glass-desserts-chocolate-mousse-and-brownie-s2.jpg" alt=“dessert”>
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<footer>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-4">
+		<h4>help & support</h4>
+		
+			<p><a href="/how-it-works/">How it Works</a></p>
+        <p> <a href="/help/">Help Center</a></p>
+        <p> <a href="/service-areas/">Service Areas</a></p>
+        <p> <a href="/support/">Contact Support</a></p>
+		
+	</div>
+    <div class="col-sm-4">
+		<h4>product</h4>
+		<p> <a href="/plaid-box/">Shipped Dinner Kits</a> <p/>
+       <p> <a href="/corporate/">Munchery@Work</a> <p/>
+       <p> <a href="/gifts/">Gifts</a><p/>
+        <p> <a href="/mobile/">Mobile Apps</a></p>
+      
+    </div>
+    
+	<div class="col-sm-4">
+		<h4>contact us</h4>
+		<p> <a href="/plaid-box/">facebook</a> <p/>
+       <p> <a href="/corporate/">twitter</a> <p/>
+       <p> <a href="/gifts/">Email<a/> </p>
+        <p> <a href="/mobile/">insta</a></p>		
+
+  </div>
+</div>
+</footer>
+</body>
+</html>
+

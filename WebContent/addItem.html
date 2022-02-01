@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>online food</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar {
+      margin-bottom: 25px;
+     border-radius: 0;
+    }
+    
+  
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    
+	body{
+		background-color: #ffccee
+}
+    #footer {
+    background:#1f1f1f;
+    opacity:0.6;
+    clear:both;
+    height:190px;
+    margin-top:-0px;
+    padding:0px 0;
+    width:100%;
+}
+#footer span {
+    color:#FFF;
+    font-size:16px;
+    padding-right:10px;
+}
+    }
+.jumbotron {
+background-image: url(http://www.marcelaburgos.com/wp-content/uploads/2013/07/cupcakes-de-caramelo-banner.jpg);
+background-size: cover;
+height: 100%;
+padding: 20px 15px;
+text-align:center;
+background-size:cover;
+}
+
+.jumbotron h1{
+color: #006600
+}
+.jumbotron p{
+color: #33fff9
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 100px;
+height: 28px;
+background-color: #ff0000;
+}
+tt{
+	margin-top:20px;
+}
+  </style>
+</head>
+<body>
+<section>
+<div class="jumbotron">
+
+  <div class="container text-center ”>
+	<div class="col-lg-4">
+                            </div>
+    <h1> Online Food delivery</h1>
+    <p>Eat Live Enjoy</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    </nav>
+<h1 align="center" style='border:2px green solid;'> <i><b>ADD FOOD ITEMS..!</b></i></h1>
+
+<table id="tt" style="margin:auto">
+<br><br>
+
+<thead style="font-weight:bold;"><tr><th>   </th><tr></thead>
+
+<tbody>
+
+<form action= "addItem.jsp" method="POST" >
+<tr><td><b>
+    Name  </b> </td><td>:</td> 
+  <td><input type = "text" name ="name" autofocus required><br><br></td>
+  </tr>
+<tr>
+<td><b>Category </b> </td><td>:</td> 
+  <td><input type = "text" name= "category" required> <br/><br/></td></tr>
+  <tr>
+     <td><b>Image </b> </td><td>:</td> 
+    <td><input type = "text" name ="pic" required "><br/><br/></td> </tr>
+    <tr><td><b>
+    Availability Status  </b> </td><td>:</td> 
+  <td><input type = "text" name ="status"  required><br><br></td>
+  </tr>
+  <tr><td><b>
+    Price  </b> </td><td>:</td> 
+  <td><input type = "text" name ="price" required><br><br></td>
+  </tr>
+  
+  <tr><td><br/> <input type = "submit" value="Add!" style="color:black"> </td></tr>
+    <br><br><br>
+ </tbody> 
+</table>
+
+</form> 
+
+<div id="footer">
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-4">
+		<h4>help & support</h4>
+		
+			<p><a href="/how-it-works/">How it Works</a></p>
+        <p> <a href="/help/">Help Center</a></p>
+        <p> <a href="/service-areas/">Service Areas</a></p>
+        <p> <a href="/support/">Contact Support</a></p>
+		
+	</div>
+    <div class="col-sm-4">
+		<h4>product</h4>
+		<p> <a href="/plaid-box/">Shipped Dinner Kits</a> <p/>
+       <p> <a href="/corporate/">Munchery@Work</a> <p/>
+       <p> <a href="/gifts/">Gifts</a><p/>
+        <p> <a href="/mobile/">Mobile Apps</a></p>
+      
+    </div>
+    
+	<div class="col-sm-4">
+		<h4>contact us</h4>
+		<p> <a href="/plaid-box/">facebook</a> <p/>
+       <p> <a href="/corporate/">twitter</a> <p/>
+       <p> <a href="/gifts/">Email<a/> </p>
+        <p> <a href="/mobile/">insta</a></p>		
+
+  </div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGklEQVQYV2NkIAAYh7SCa9tl/oM8gNMXMAUAf/wFWQFfPucAAAAASUVORK5CYII=);
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: "Open Sans", Arial;
+  margin: 20px;
+}
+@media all and (max-width: 480px) {
+  body {
+    font-size: 85%;
+  }
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+.box-title {
+  text-shadow: 2px 2px 0 yellow;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  background: white;
+  /* border: 5px solid black; */
+  max-width: 500px;
+  box-shadow: 10px 10px 0 black;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+}
+.wrapper:before {
+  background: linear-gradient(-135deg, #000 10px, transparent 0), linear-gradient(135deg, #000 10px, transparent 0), linear-gradient(-134deg, yellow 13px, transparent 0), linear-gradient(134deg, yellow 13px, transparent 0);
+  background-repeat: repeat;
+  background-size: 21px 32px;
+  content: "";
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+.wrapper:after {
+  background: linear-gradient(-45deg, #000 10px, transparent 0), linear-gradient(45deg, #000 10px, transparent 0), linear-gradient(-45deg, yellow 13px, transparent 0), linear-gradient(45deg, yellow 13px, transparent 0);
+  background-repeat: repeat;
+  background-size: 21px 32px;
+  content: "";
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+
+.price-total {
+  background: black;
+  font-size: 1.5em;
+  text-align: center;
+  color: yellow;
+  font-weight: 800;
+  padding: 5px 0;
+  margin: 15px 0;
+}
+.price-total span {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: white;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.form-el {
+  padding: 5px;
+  display: block;
+}
+@media all and (min-width: 480px) {
+  .form-el.col-2 {
+    width: 50%;
+    float: left;
+  }
+}
+
+form {
+  margin: 0 -5px;
+}
+
+label {
+  display: block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+input {
+  border: 3px solid black;
+  width: 100%;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 1.1em;
+  font-family: "Open Sans", Arial;
+  transition: linear all 0.2s;
+ 
+}
+select{
+  border: 3px solid black;
+  width: 100%;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 1.1em;
+  font-family: "Open Sans", Arial;
+  
+ 
+}
+input:focus {
+  outline: 0;
+  background-color: yellow;
+}
+
+button {
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px 5px 10px 10px;
+  text-transform: uppercase;
+  background: yellow;
+  border: 0;
+  line-height: 1.6;
+  float: right;
+  box-shadow: 3px 3px 0 black;
+  cursor: pointer;
+  transition: ease-in all 0.3s;
+}
+@media all and (max-width: 480px) {
+  button {
+    line-height: 1.8;
+  }
+}
+button #padlock {
+  width: 28px;
+  height: 28px;
+  float: left;
+}
+button #lock-18-icon {
+  transition: ease-in fill 0.3s;
+}
+button:hover, button:focus {
+  background: black;
+  color: yellow;
+  outline: 0;
+  box-shadow: 5px 5px 0 #ddd;
+}
+button:hover #lock-18-icon, button:focus #lock-18-icon {
+  fill: yellow;
+}
+
+.cf:after {
+  display: table;
+  content: "";
+  clear: both;
+}
